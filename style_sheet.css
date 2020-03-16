@@ -1,24 +1,42 @@
-* {
-  background-color: #222
-}
-
-h1 {
-  color: #42f5b3
+body,html {
+  padding: 0;
+  margin: 0;
+  background-color: black;
 }
 
 .title {
+  color: white;
   display: flex;
   justify-content: center;
+  font-size: 32px;
 }
 
 .image {
   display: flex;
-  align-self: center;
   justify-content: center;
 }
 
-.text > p{
-  display: flex;
-  justify-content: center;
+.text p{
   color: white;
+  font-size: 22px;
+}
+
+.text {
+  text-align: center;
+}
+
+p:last-child {
+  margin-top: -20px;
+}
+
+:not(p) {
+  color: #edccca;
+}
+
+p::after {
+  content: " --";
+}
+
+p::before {
+  content: "-- ";
 }
